@@ -1,8 +1,8 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:zoolife_2/logic/blocs/bottom_tabbar_bloc/bottom_tabbar_bloc.dart';
 import 'package:zoolife_2/widgets/root_widget.dart';
+
 import '../constants.dart';
 import '../theme.dart';
 

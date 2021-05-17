@@ -2,11 +2,7 @@ import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:zoolife_2/logic/cubits/internet/internet_cubit.dart';
-import 'package:zoolife_2/theme.dart';
-
-import 'logic/blocs/bottom_tabbar_bloc/bottom_tabbar_bloc.dart';
 import 'screens/splash_page.dart';
-import 'screens/test_page.dart';
 
 void main() {
   runApp(MyApp());

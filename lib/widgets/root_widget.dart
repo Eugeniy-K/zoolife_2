@@ -1,14 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:zoolife_2/models/tab_item.dart';
 import 'package:zoolife_2/screens/basket_page.dart';
 import 'package:zoolife_2/screens/catalog_page.dart';
 import 'package:zoolife_2/screens/home_page.dart';
 import 'package:zoolife_2/screens/profile_page.dart';
 import 'package:zoolife_2/widgets/tab_selector.dart';
-
-import '../bottom_navigation_bar_root_item.dart';
-import '../theme.dart';
 
 
 ///Виджет для отображения содержимого вкладок
@@ -94,22 +90,7 @@ class RootWidgetState extends State<RootWidget> {
     // WillPopScope handle android back btn
     return WillPopScope(
       onWillPop: _onWillPop,
-      // onWillPop: () async {
-      //   final isFirstRouteInCurrentTab =
-      //   !await tabs[stackTabs.last].key.currentState!.maybePop();
-      //   if (isFirstRouteInCurrentTab) {
-      //     // if not on the 'main' tab
-      //     if (stackTabs.length != 1) {
-      //       // select 'main' tab
-      //       stackTabs.removeLast();
-      //       _selectTab(stackTabs.last);
-      //       // back button handled by app
-      //       return false;
-      //     }
-      //   }
-      //   // let system handle back button if we're on the first route
-      //   return isFirstRouteInCurrentTab;
-      // },
+
       // this is the base scaffold
       // don't put appbar in here otherwise you might end up
       // with multiple appbars on one screen

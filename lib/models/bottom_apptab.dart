@@ -1,1 +1,0 @@
-enum BottomAppTab {main, catalog, basket, profile}
